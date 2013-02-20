@@ -1,0 +1,9 @@
+Package: dsim
+Type: Package
+Title: DNA computer simulator
+Version: 0.0.1
+Date: 2013-02-20
+Authors: Paul Duplys, Thorsten Tiede
+Maintainers: Paul Duplys <paul.duplys@gmail.com>, Thorsten Tiede <thorsten.tiede@gmail.com>
+Description: This package implements a rudimentary simulator of a DNA computer. The package is being developed and maintained in the free time of the authors. Thus, we do not give any warranty in respect to the consistency, completeness or correctness of this package - neither from the software engineering point of view nor from the scientific perspective. We highly appreciate constructive feedback, though.
+License: GNU General Public License Version 3 (GPLv3)
