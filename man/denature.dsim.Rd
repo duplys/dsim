@@ -1,11 +1,12 @@
 \name{denature.dsim}
 \alias{denature.dsim}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{A function for denaturing a double stranded DNA}
 \description{
+A function for simulating the denaturing of a double stranded DNA, i.e. for simulating the splitting it into single strands [1].
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+
+[1] Hoogeboom et al, ..., 1996
 }
 \usage{
 denature.dsim(x, ...)

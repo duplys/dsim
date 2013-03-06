@@ -1,10 +1,11 @@
 \name{print.dsim}
 \alias{print.dsim}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
+\title{A function to print the state of the dsim simulation.
 %%  ~~function to do ... ~~
 }
 \description{
+Add a detailed description here.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{

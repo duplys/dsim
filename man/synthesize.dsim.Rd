@@ -1,10 +1,11 @@
 \name{synthesize.dsim}
 \alias{synthesize.dsim}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
+\title{A function to synthesize a sequence of nucleotides, i.e. a DNA strand
 %%  ~~function to do ... ~~
 }
 \description{
+A function to synthesize a sequence of nucleotides, i.e. a DNA strand. This is equivalent to constructing a DNA strand.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{

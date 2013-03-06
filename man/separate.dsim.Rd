@@ -1,10 +1,11 @@
 \name{separate.dsim}
 \alias{separate.dsim}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
+\title{A function to do a separation of strands by their length
 %%  ~~function to do ... ~~
 }
 \description{
+Add a detailed description here.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{

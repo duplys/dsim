@@ -1,7 +1,7 @@
 \name{x}
 \alias{x}
 \docType{data}
-\title{
+\title{Data of some type
 %%   ~~ data name/kind ... ~~
 }
 \description{

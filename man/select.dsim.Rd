@@ -1,11 +1,14 @@
 \name{select.dsim}
 \alias{select.dsim}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
+\title{A function to select single stranded sequences that match specific patterns
 %%  ~~function to do ... ~~
 }
 \description{
+A function to select single stranded sequences that match specific patterns by binding them to a surface that carries the complement of the pattern [1]. Selecting is equivalent to a search operation using a pattern, i.e. a single stranded DNA.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+
+[1] Hoogeboom, ..., 1996
 }
 \usage{
 select.dsim(x, ...)

@@ -1,9 +1,7 @@
 \name{anneal.dsim}
 \alias{anneal.dsim}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{synthesize different base sequences}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

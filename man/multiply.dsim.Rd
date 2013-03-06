@@ -1,11 +1,14 @@
 \name{multiply.dsim}
 \alias{multiply.dsim}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
+\title{A function for multiplying a specific double strand DNA
 %%  ~~function to do ... ~~
 }
 \description{
+A function for multiplying a specific double strand DNA. The double strands are repeatedly split into single strands which are grown into full double strands by an enzyme called polymerase [1]. Multiplying a double stranded DNA is therefore equivalent to copying it.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+
+[1] Hoogeboom, ... , 1996
 }
 \usage{
 multiply.dsim(x, ...)
