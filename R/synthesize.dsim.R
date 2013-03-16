@@ -13,6 +13,6 @@
 # You should have received a copy of the GNU General Public License
 # along with dsim R package. If not, see <http://www.gnu.org/licenses/>.
 
-synthesize.dsim <- function(x, ...) {
-	cat("this is dsim synthesize!\n")
+synthesize.dsim <- function(number, length, ...) {
+	ret <- matrix(sample(c(0,1,2,3), length*number, replace=TRUE), nrow=number)
 }

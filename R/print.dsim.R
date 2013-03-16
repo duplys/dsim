@@ -14,6 +14,6 @@
 # along with dsim R package. If not, see <http://www.gnu.org/licenses/>.
 
 print.dsim <- function(x, ...) {
-	cat("this is dsim!\n")
-	cat(x)
+	mdat <- matrix(c("A","T",2,3,11,12), nrow = 3, ncol = 2, byrow = TRUE)
+	print(mdat)
 }

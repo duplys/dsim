@@ -5,20 +5,15 @@
 %%  ~~function to do ... ~~
 }
 \description{
-A function to synthesize a sequence of nucleotides, i.e. a DNA strand. This is equivalent to constructing a DNA strand.
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+A function to synthesize a given number of DNA strands, i.e. sequences of nucleotides, of a chosen length. This function is the simulation equivalent of DNA synthesis in the lab.
 }
 \usage{
-synthesize.dsim(x, ...)
+synthesize.dsim(number_of_strands, length_of_strands)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
-%%     ~~Describe \code{x} here~~
-}
-  \item{\dots}{
-%%     ~~Describe \code{\dots} here~~
-}
+  \item{number}{ The desired number of DNA strands to be synthesized}
+  \item{length}{ The length of the DNA strands, i.e. the number of nucleotides per strand, to be synthesized}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
