@@ -13,8 +13,6 @@
 # You should have received a copy of the GNU General Public License
 # along with dsim R package. If not, see <http://www.gnu.org/licenses/>.
 
-synthesize.dsim <- function(number, length, ...) {
-	# TODO: the synthesize function must return a matrix where the rows i,i+1 represent a double-strand
-	#       this is needed because we want to be able to work with sticky ends
-	ret <- matrix(sample(c(0,1,2,3), length*number, replace=TRUE), nrow=number)
+cut.dsim <- function(x, ...) {
+	cat("this is dsim cut!\n")
 }

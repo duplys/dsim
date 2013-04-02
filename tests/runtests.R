@@ -13,8 +13,11 @@
 # You should have received a copy of the GNU General Public License
 # along with dsim R package. If not, see <http://www.gnu.org/licenses/>.
 
-synthesize.dsim <- function(number, length, ...) {
-	# TODO: the synthesize function must return a matrix where the rows i,i+1 represent a double-strand
-	#       this is needed because we want to be able to work with sticky ends
-	ret <- matrix(sample(c(0,1,2,3), length*number, replace=TRUE), nrow=number)
+runtests <- function(x, ...) {
+	library('RUnit')
+	testdir <- getwd()
+	print(testdir)
+	test.suite <- defineTestSuite("example", dirs = file.path(testdir), testFileRegexp = '^test.*.R')
+	test.result <- runTestSuite(test.suite)
+	printTextProtocol(test.result)
 }
