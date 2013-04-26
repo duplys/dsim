@@ -13,7 +13,15 @@
 # You should have received a copy of the GNU General Public License
 # along with dsim R package. If not, see <http://www.gnu.org/licenses/>.
 
-print.dsim <- function(x, ...) {
-	mdat <- matrix(c("A","T",2,3,11,12), nrow = 3, ncol = 2, byrow = TRUE)
-	print(mdat)
+print.dsim <- function(material, ...) {
+	for(i in 1:length(material)) {
+		working_copy <- material[[i]]
+		
+		working_copy[working_copy==0] <- 'A'
+		working_copy[working_copy==1] <- 'G'
+		working_copy[working_copy==2] <- 'C'
+		working_copy[working_copy==3] <- 'T'
+		
+		print(paste(working_copy, collapse=" "))
+	}
 }
