@@ -17,72 +17,12 @@
 # Test cases as identified by Bigenix for Issue #1, comment-16672904
 
 
-# "... we should opt for both possibilities, cutting at a selected position ... "
-test.cut_at_selected_position <- function() {
-	library(dsim)
-	
-	material <- list()
-	test_sequence <- c(2,0,0,1,1,2,3,1,0,2,1,1,3,3)
-	material <- synthesize.dsim(material, 1, length(test_sequence), test_sequence)
-	sequence_index = 1
-	cut_start = 4
-	cut_end = length(test_sequence)
-	material <- cut.dsim(material, sequence_index, cut_start, cut_end)
-	
-	# check that cutting produced another DNA strand
-	number_sequences <- length(material)
-	checkEquals(number_sequences, 2)
-	
-	# check that cutting was done at the correct position
-	expected   <- c(1,2,3,1,0,2,1,1,3,3)
-	comp_bases <- material[[1]] == expected
-	different_bases <- which(comp_bases == FALSE)
-	checkTrue(length(different_bases) == 0)
-	
-	# check the correctness of the leftover
-	expected   <- c(2,0,0,1)
-	comp_bases <- material[[2]] == expected
-	different_bases <- which(comp_bases == FALSE)
-	checkTrue(length(different_bases) == 0)
-
-}
-
-test.cut_at_selected_position_in_the_middle <- function() {
-	library(dsim)
-	
-	material <- list()
-	test_sequence <- c(2,0,0,1,1,2,3,1,0,2,1,1,3,3)
-	material <- synthesize.dsim(material, 1, length(test_sequence), test_sequence)
-	sequence_index = 1
-	cut_start = 4
-	cut_end = 9
-	material <- cut.dsim(material, sequence_index, cut_start, cut_end)
-	
-	# check that cutting produced another DNA strand
-	number_sequences <- length(material)
-	checkEquals(number_sequences, 3)
-	
-	# check that cutting was done at the correct position
-	expected   <- c(1,2,3,1,0)
-	comp_bases <- material[[1]] == expected
-	different_bases <- which(comp_bases == FALSE)
-	checkTrue(length(different_bases) == 0)
-	
-	# check the correctness of the prefix leftover
-	expected   <- c(2,0,0,1)
-	comp_bases <- material[[2]] == expected
-	different_bases <- which(comp_bases == FALSE)
-	checkTrue(length(different_bases) == 0)
-
-	# check the correctness of the suffix leftover
-	expected   <- c(2,1,1,3,3)
-	comp_bases <- material[[3]] == expected
-	different_bases <- which(comp_bases == FALSE)
-	checkTrue(length(different_bases) == 0)
-	
-}
-
 # "... and cutting at a specific sequence of nucleotides no matter at which position that sequence happens to be"
+# TO BE IMPLEMENTED
+test.find <- function() {
+	checkEquals(TRUE, FALSE)
+}
+
 #test.cut_at_selected_sequence <- function() {
 #	library(dsim)
 	
@@ -120,6 +60,7 @@ test.cut_at_selected_position_in_the_middle <- function() {
 #}
 
 # " Additionally we might want to cut a specific sequence but only if it lies within a certain window along the dna-strand."
+# TO BE IMPLEMENTED
 #test.cut_sequence_within_certain_window <- function()
 #{
 #	checkEquals(6, 6)

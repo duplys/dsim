@@ -13,17 +13,11 @@
 # You should have received a copy of the GNU General Public License
 # along with dsim R package. If not, see <http://www.gnu.org/licenses/>.
 
-synthesize.dsim <- function(material, number_sequences=1, sequence_length=10, seq=FALSE) {
 
-	if(is.numeric(seq)) {
-		for(i in 1:number_sequences) {
-			material[[length(material)+1]] <- seq[1:sequence_length]
-		}
-	} else {
-		for(i in 1:number_sequences) {
-			material[[length(material)+1]] <- sample(c(0,1,2,3), sequence_length, replace=TRUE)
-		}		
-	}
-	
-	material
+# Test cases as identified by Bigenix for Issue #1, comment-16672904
+
+# "... we should opt for both possibilities, cutting at a selected position ... "
+# TO BE IMPLEMENTED
+test.read <- function() {
+	checkEquals(TRUE, FALSE)
 }

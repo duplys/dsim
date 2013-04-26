@@ -13,17 +13,13 @@
 # You should have received a copy of the GNU General Public License
 # along with dsim R package. If not, see <http://www.gnu.org/licenses/>.
 
-synthesize.dsim <- function(material, number_sequences=1, sequence_length=10, seq=FALSE) {
-
-	if(is.numeric(seq)) {
-		for(i in 1:number_sequences) {
-			material[[length(material)+1]] <- seq[1:sequence_length]
-		}
-	} else {
-		for(i in 1:number_sequences) {
-			material[[length(material)+1]] <- sample(c(0,1,2,3), sequence_length, replace=TRUE)
-		}		
-	}
-	
-	material
+find.dsim <- function(material, sequence, ...) {
+#		search_iterations = length(working_copy) - length(seq)
+#	
+#		if(cut_after_seq == TRUE) {
+#			for(i in 1:(search_iterations + 1)) {
+#				if(identical(working_copy[i:(i+length(seq))], seq) == TRUE) {
+#					start_index = i
+#				}
+#			}
 }
